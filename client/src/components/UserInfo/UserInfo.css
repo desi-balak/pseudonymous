@@ -1,0 +1,29 @@
+/* UserInfo.css */
+.user-info {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+}
+
+.profile-image-container {
+    display: flex;
+    align-items: center; /* Center the image within the container */
+}
+
+.profile-image-container img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Ensure the image is rounded */
+}
+
+.username-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically within the container */
+}
+
+.username {
+    font-weight: bold; /* Make the username bold */
+    color: black; /* Text color */
+    margin-top: -10px; /* Adjust this value to position the username upward */
+}

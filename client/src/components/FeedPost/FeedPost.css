@@ -1,0 +1,24 @@
+.feed-post {
+    width: 100%; /* Default to 100% for mobile devices */
+    margin: 0 auto; /* Center posts horizontally */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* For tablets and smaller screens */
+@media (min-width: 481px) and (max-width: 768px) {
+    .feed-post {
+        width: 80%; /* 80% width for tablets */
+    }
+}
+
+/* For laptops and larger screens */
+@media (min-width: 769px) {
+    .feed-post {
+        width: 60%; /* 60% width for laptops */
+    }
+}
