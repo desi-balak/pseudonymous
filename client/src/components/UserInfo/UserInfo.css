@@ -24,6 +24,5 @@
 
 .username {
     font-weight: bold; /* Make the username bold */
-    color: black; /* Text color */
-    margin-top: -10px; /* Adjust this value to position the username upward */
+    color: black; /* Text color */ /* Adjust this value to position the username upward */
 }

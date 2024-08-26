@@ -1,12 +1,14 @@
+/* src/components/FeedPost.css */
+
 .feed-post {
     width: 100%; /* Default to 100% for mobile devices */
     margin: 0 auto; /* Center posts horizontally */
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Padding inside the post */
+    overflow: hidden; /* Hide any overflow content */
 }
 
 /* For tablets and smaller screens */
@@ -21,4 +23,10 @@
     .feed-post {
         width: 60%; /* 60% width for laptops */
     }
+}
+
+/* Add a horizontal line between posts */
+.feed-post + .feed-post {
+    border-top: 1px solid #ddd; /* Horizontal line between posts */
+    margin-top: 15px; /* Space above the horizontal line */
 }

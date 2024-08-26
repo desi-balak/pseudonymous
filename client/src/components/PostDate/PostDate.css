@@ -1,0 +1,6 @@
+.post-date {
+    font-weight: normal;
+    color: gray;
+    margin-top: -3px; /* Adjust this value to move it upward */
+    font-size: 0.9rem; /* Slightly smaller font */
+}
