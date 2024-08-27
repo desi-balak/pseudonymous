@@ -1,0 +1,51 @@
+/* src/components/PostFooter.css */
+
+.post-footer {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between items */
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #333;  
+}
+
+.post-footer .icon-container {
+    display: flex;
+    justify-content: space-between; /* Ensure buttons are evenly spaced */
+    width: 100%; /* Full width for even distribution */
+}
+
+.post-footer .icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex: 1; /* Allow icons to grow and fill available space */
+    justify-content: center; /* Center icon and text within each flex item */
+    padding: 0 10px; /* Add horizontal padding around icons */
+}
+
+.post-footer .icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.post-footer .like-count,
+.post-footer .comment-count {
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .post-footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: stretch; /* Stretch items to fill the container */
+    }
+
+    .post-footer .icon-container {
+        flex-direction: column; /* Stack icons vertically in the container */
+        align-items: stretch; /* Ensure icons stretch to full width */
+    }
+
+    .post-footer .icon {
+        margin: 10px 0; /* Add vertical spacing between icons */
+        padding: 0; /* Remove horizontal padding on smaller screens */
+    }
+}
