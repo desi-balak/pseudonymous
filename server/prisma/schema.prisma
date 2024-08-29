@@ -21,3 +21,16 @@ model User{
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
+
+model Post{
+  id Int @default(autoincrement()) @id
+  author_username String
+  body String
+  attachments String[]
+  // TODO
+  // likes String[]
+  // comments String[]
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+}
